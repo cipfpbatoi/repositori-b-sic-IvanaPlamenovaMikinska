@@ -4,6 +4,8 @@
     </head>
     <body>
         <h1>Exercici 1</h1>
+        <p>Assigna múltiples variables i utilitza operadors 
+            aritmètics i lògics. Mostra el resultat de cada operació.</p>
     <?php
     $a = 5;
     $b = 3;

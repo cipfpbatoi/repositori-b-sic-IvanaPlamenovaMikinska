@@ -4,6 +4,8 @@
     </head>
     <body>
         <h1>Exercici 2</h1>
+        <p>Utilitza un bucle for per imprimir els números 
+            parells del 0 al 20. Fes-ho també amb un bucle while.</p>
         <?php
         for($i = 0; $i < 21; $i++) {
             if($i % 2 == 0) {
