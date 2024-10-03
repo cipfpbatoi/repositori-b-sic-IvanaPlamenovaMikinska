@@ -1,8 +1,11 @@
 <?php
 include "funciones.php";
 
-$palabra = "enchufe";
-$arrayAdivinadas = ["_", "_", "_", "_", "_", "_", "_"];
+$palabra = "endoll";
+$arrayAdivinadas = array();
+for ( $i = 0; $i< strlen($palabra);$i++){
+    $arrayAdivinadas[] = "_";
+}
 $mensaje = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

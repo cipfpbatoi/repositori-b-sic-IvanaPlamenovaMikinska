@@ -3,8 +3,8 @@
 function inicializarGraella()
 {
     $graella = array();
-    for ($i = 0; $i < 6; $i++) {
-        for ($j = 0; $j < 7; $j++) {
+    for ($i = 0; $i < FILES; $i++) {
+        for ($j = 0; $j < COLUMNES; $j++) {
             $graella[$i][$j] = 0;
         }
     }
@@ -13,21 +13,22 @@ function inicializarGraella()
 
 function pintarGraella($graella)
 {
-    echo '<table>';
+    $tabla = '<table>';
     foreach ($graella as $fila) {
-        echo '<tr>';
+        $tabla .= '<tr>';
         foreach ($fila as $celda) {
             if ($celda == 1) {
-                echo '<td class="player1"></td>';
+                $tabla .= '<td class="player1"></td>';
             } elseif ($celda == 2) {
-                echo '<td class="player2"></td>';
+                $tabla .= '<td class="player2"></td>';
             } else {
-                echo '<td class="vacio"></td>';
+                $tabla .= '<td class="vacio"></td>';
             }
         }
-        echo '</tr>';
+        $tabla .= '</tr>';
     }
-    echo '</table>';
+    $tabla .= '</table>';
+    return $tabla;
 }
 
 

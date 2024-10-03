@@ -39,6 +39,8 @@
 <body>
     <h1>Cuatro En Ralla</h1>
     <?php
+    const FILES = 6;
+    const COLUMNES = 7;
     include "funciones.php";
 
     if (isset($_POST['graella']) && isset($_POST['jugadorActual'])) {
@@ -53,7 +55,7 @@
         $graella = ferMoviment($graella, $columna, $jugadorActual);
         $jugadorActual = $jugadorActual == 1 ? 2 : 1;
     }
-    pintarGraella($graella);
+    echo pintarGraella($graella);
 
     echo "<h3>Turno del Jugador " . ($jugadorActual == 1 ? "1 (Rojo)" : "2 (Amarillo)") . "</h3>";
 
